@@ -9,6 +9,6 @@ int main()
     int n;
     cout<<"ENTER THE VALUE";
     cin>>n;
-    cout<<cube(n);
+    cout<<"CUBE IS:"<<cube(n);
     return 0;
 }

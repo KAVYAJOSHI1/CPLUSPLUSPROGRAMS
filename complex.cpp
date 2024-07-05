@@ -7,7 +7,7 @@ class COMPLEX
     public:
     void read()
     {
-        cout<<"ENTER THE REAL AND IMAGINARY PARTS"<<endl;
+        cout<<"ENTER THE REAL AND IMAGINARY PARTS\n"<<endl;
         cin>>real>>imag;
     }
     void add(COMPLEX c1,COMPLEX c2)

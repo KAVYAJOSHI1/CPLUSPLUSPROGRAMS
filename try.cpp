@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class try
+class A
 {
     public:
     int a=10;
+    
 };
 int main() {
-    try obj;
+    A obj;
     cout << obj.a;
    
 }

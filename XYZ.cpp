@@ -1,4 +1,4 @@
-class XYZ {
+class XYZ :public ABC {
     private:
         int numB;
     public:

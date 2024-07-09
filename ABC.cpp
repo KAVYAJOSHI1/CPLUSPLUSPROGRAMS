@@ -1,3 +1,4 @@
+#include<XYZ.cpp>
 #include<iostream>
 using namespace std;
 
@@ -13,15 +14,7 @@ class ABC {
         friend int add(ABC, XYZ); // Declare add as a friend function
 };
 
-class XYZ {
-    private:
-        int numB;
-    public:
-        void setNumB() {
-            numB = 10;
-        }
-        friend int add(ABC, XYZ); // Declare add as a friend function
-};
+
 
 int add(ABC O1, XYZ O2) {
     return O1.numA + O2.numB;

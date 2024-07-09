@@ -21,6 +21,7 @@ class space{
 int main()
 {
     space s1;
+    cout<<"CHANGED VALUE IS:\n";
     s1.getdata(10,20);
     -s1;
     s1.display();

@@ -1,9 +1,13 @@
 #include <iostream>
 using namespace std;
 
+class try
+{
+    public:
+    int a=10;
+};
 int main() {
-    for(int i=0;i<10;i++);
-    {
-        cout<<"a";
-    }
+    try obj;
+    cout << obj.a;
+   
 }

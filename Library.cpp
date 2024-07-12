@@ -53,8 +53,8 @@ class Library
       int main()
       {
         Book b(1,100);
-        Library lib1;
-        float bookPrice=b;
+        Library lib1;11
+        //float bookPrice=b;
         lib1=b;
         cout<<"Book Details:\n";
         b.display();

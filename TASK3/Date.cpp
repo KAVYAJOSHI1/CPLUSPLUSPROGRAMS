@@ -13,9 +13,10 @@ class Date
         
         
 
-        void setDay()
+        void getDay()
         {
-            cout << day << "/" << month << "/" << year << endl;
+            cout << "Enter day, month and year" << endl;
+            cin >> day >> month >> year;
         }
 
         void validate()
@@ -33,7 +34,7 @@ class Date
                 cout << "Invalid year" << endl;
             }
         }
-        void getDay()
+        void setDay()
         {
             cout << day << "/" << month << "/" << year << endl;
         }
@@ -43,9 +44,9 @@ int main()
 {
     Date d;
     
-    d.setDay();
-    d.validate();
     d.getDay();
+    d.validate();
+    d.setDay();
     return 0;
 }
 

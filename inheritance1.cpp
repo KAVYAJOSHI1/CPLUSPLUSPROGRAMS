@@ -4,7 +4,7 @@ class a
 {
     public:
     int legs=4;
-    void display()
+    void display1()
     {
         cout<<legs;
     }

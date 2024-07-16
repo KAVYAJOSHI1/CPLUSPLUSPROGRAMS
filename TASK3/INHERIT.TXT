@@ -1,0 +1,2 @@
+class derivedclassname : accessmode baseclassname
+class doctor: public person

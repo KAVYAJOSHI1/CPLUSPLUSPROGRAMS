@@ -1,5 +1,5 @@
 //Base class student ,inherit is cse student .
-#include <iostream.h>
+#include <iostream>
 using namespace std;
 class student
 {
@@ -39,11 +39,8 @@ int main()
     cse c;
     
     c.getdata1();
-    
-    c.display1();
-    
     c.getdata2();
-    
+    c.display1();
     c.display2();
     
     return 0;

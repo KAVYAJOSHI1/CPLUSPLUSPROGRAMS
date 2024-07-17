@@ -17,5 +17,5 @@ int main()
 {
     A x(10);
     A y(20);
-    sum(x,y);
+    cout<<sum(x,y);
 }

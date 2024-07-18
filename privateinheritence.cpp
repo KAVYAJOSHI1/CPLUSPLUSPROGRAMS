@@ -20,12 +20,13 @@ class A{
 class B:public A{
     public:
     void display(){
+        set(10,20);
         cout<<b*get();
     }
 };
 int main(){
     B obj;
-    obj.set(10,20);
+    
     obj.display();
     return 0;
 }

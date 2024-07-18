@@ -1,4 +1,4 @@
-//to acces private member of class a in b
+//to acces private member of  private class a in b
 //Private members can be accessed through functions
 
 #include <iostream>

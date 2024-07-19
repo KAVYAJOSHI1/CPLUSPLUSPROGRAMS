@@ -15,10 +15,7 @@ public:
         angle = a;
         radius = b;
     }
-    point(float a)
-    {
-        angle = a;
-    }
+    
     void convert()
     {
         float x, y;

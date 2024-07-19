@@ -3,6 +3,7 @@ Implement function to calculate Euclidean distance between two points and displa
 result.*/
 
 #include <iostream>
+#include <math.h>
 using namespace std;
 class point{
     int x,y,z;
@@ -15,7 +16,7 @@ class point{
     void distance(point p2){
         int d;
         d = (x-p2.x)*(x-p2.x) + (y-p2.y)*(y-p2.y) + (z-p2.z)*(z-p2.z);
-        cout << d;
+        cout << sqrt(d);
     }
 };
 int main(){

@@ -1,4 +1,4 @@
-/*. Write a C++ program for demonstrating the concept of function overloading. Create class
+/*2). Write a C++ program for demonstrating the concept of function overloading. Create class
 shape with function surfacearea(). Overload function surfacearea() for calculating the
 surface area sphere, cylinder and cube.
 */

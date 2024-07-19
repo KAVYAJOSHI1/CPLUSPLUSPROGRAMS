@@ -10,7 +10,7 @@ class shape
     float surfacearea(float r)
     {
         float area;
-        area=3.14*r*r;
+        area=4*3.14*r*r;
         return area;
     }
     float surfacearea(float r,float h)
@@ -22,7 +22,7 @@ class shape
     float surfacearea(float l,float b,float h)
     {
         float area;
-        area=2*(l*b+l*h+b*h);
+        area=6*(l*b+l*h+b*h);
         return area;
 }
 };

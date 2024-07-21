@@ -15,6 +15,7 @@ public:
     
     int getValueA() const {
         return valueA;
+    
     }
 };
 

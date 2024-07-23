@@ -13,4 +13,9 @@ int main()
     {
         cout<<"Valkyrie is faster than Roadster with the speed of "<<speed1<<endl;
     }
+    else
+    {
+        cout<<"Roadster is faster than Valkyrie with the speed of "<<speed2<<endl;
+    }
+    return 0;
 }

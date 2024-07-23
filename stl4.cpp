@@ -11,6 +11,7 @@ int operator()(int x,int y)
 };
 int main()
 {
-    functionObj obj;
-    cout<<obj(10,20);
+    functionObj fo;
+    int mult=fo(10,20);
+    cout<<"The product is :"<<mult<<endl;
 }

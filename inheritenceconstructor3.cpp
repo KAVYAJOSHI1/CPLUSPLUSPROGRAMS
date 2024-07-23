@@ -4,7 +4,7 @@ using namespace std;
 class A
 {
     public:
-    int a
+    int a;
     A(int x)
     {
         a=x;
@@ -14,7 +14,7 @@ class A
 class B:public A
 {
     public:
-    int b
+    int b;
     B(int x,int y):A(x)
     {
         b=y;
@@ -24,14 +24,14 @@ class B:public A
 class C:public B
 {
     public:
-    int c
+    int c;
     C(int x,int y,int z):B(x,y)
     {
         c=z;
         cout<<c;
     }
 
-}
+};
 int main()
 {
     C c(1,2,3);

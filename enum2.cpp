@@ -9,8 +9,8 @@ int main()
     speed1=Valkyrie;
     speed2=Roadster;
 
-    if(speed1<speed2)
+    if(speed1>speed2)
     {
-        cout<<"Valkyrie is faster than Roadster"<<endl;
+        cout<<"Valkyrie is faster than Roadster with the speed of "<<speed1<<endl;
     }
 }

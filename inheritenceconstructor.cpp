@@ -1,8 +1,9 @@
-#include <iosteam>
+#include <iostream>
 using namespace std;
 class base
 {
     int x;
+    public:
     base(int i)
     {
         x=i;
@@ -13,6 +14,7 @@ class base
 class Derived:public base
 {
     int y;
+    public:
     Derived(int i,int j):base(i)
     {
         y=j;

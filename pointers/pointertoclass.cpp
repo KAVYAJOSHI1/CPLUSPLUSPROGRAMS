@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class demo(int x)
+class demo
 {
     int i;
     public:

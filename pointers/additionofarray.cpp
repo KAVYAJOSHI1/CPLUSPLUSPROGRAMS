@@ -3,15 +3,16 @@
 using namespace std;
 
 class sum{
-    int i;
+    int x;
     public:
-    sum(){
+    sum(int n){
+        x=n;
 
 }
 
-    void add(int arr[],int n){
+    void add(int arr[]){
         int sum=0;
-        for(int i=0;i<n;i++){
+        for(int i=0;i<x;i++){
             sum+=arr[i];
         }
         cout<<"sum of array elements is : "<<sum<<endl;
@@ -20,18 +21,19 @@ class sum{
 };
 int main()
 {
-    sum obj();
     cout<<"Enter the size of array"<<endl;
     int n;
     cin>>n;
 
+    sum obj(n);
+    
     int arr[n];
     cout<<"Enter the elements of array"<<endl;
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int *p=&obj;
-    p.add(arr,n);
+    sum *p=&obj;
+    p->add(arr);
     
 
 }

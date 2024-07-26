@@ -1,34 +1,31 @@
-/*1. Demonstrate the concept of single inheritance. Create a class account with
-members name, employee_id and salary. Create a derive class developers with
-member bonus. The company give bonus of Rs. 15000 to each developer with
-salary greater than 500000 and Rs. 8000 to others. In main create the object
-of developer and display the name, employee_id and total annual income of
-that employee including bonus.*/
 #include <iostream>
+#include <string>
 using namespace std;
 
-class account
+class Account
 {
-
 public:
-string name;
-int employee_id;
-int salary;
-void getdata()
-{
-    cout << "ENTER THE NAME OF THE EMPLOYEE" << endl;
-    cin >> name;
-    cout << "ENTER THE EMPLOYEE ID" << endl;
-    cin >> employee_id;
-    cout << "ENTER THE SALARY" << endl;
-    cin >> salary;
-}
-};
-class developer : public account
-{
-    public :
-    int bonus;
+    string name;
+    int employee_id;
+    float salary;
+    
     void getdata()
+    {
+        cout << "Enter the name of the employee: ";
+        cin >> name;
+        cout << "Enter the employee ID: ";
+        cin >> employee_id;
+        cout << "Enter the salary: ";
+        cin >> salary;
+    }
+};
+
+class Developer : public Account
+{
+public:
+    int bonus;
+    
+    void calculate_bonus()
     {
         if (salary > 500000)
         {
@@ -40,12 +37,20 @@ class developer : public account
         }
     }
     
+    void display()
+    {
+        cout << "The name of the employee is: " << name << endl;
+        cout << "The employee ID of the employee is: " << employee_id << endl;
+        cout << "The total annual income of the employee is: " << salary + bonus << endl;
+    }
 };
+
 int main()
 {
-    developer d1;
+    Developer d1;
     d1.getdata();
-    cout << "THE NAME OF THE EMPLOYEE IS " << d1.name << endl;
-    cout << "THE EMPLOYEE ID OF THE EMPLOYEE IS " << d1.employee_id << endl;
-    cout << "THE TOTAL ANNUAL INCOME OF THE EMPLOYEE IS " << d1.salary + d1.bonus << endl;
+    d1.calculate_bonus();
+    d1.display();
+    
+    return 0;
 }

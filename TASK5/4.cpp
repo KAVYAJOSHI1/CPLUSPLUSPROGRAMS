@@ -30,5 +30,7 @@ int main()
     cin >> title >> author >> price;
     Book b(title, author, price);
     b.display();
+    Book newbook(b);
+    newbook.display();
     return 0;
 }

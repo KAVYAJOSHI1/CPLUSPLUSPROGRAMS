@@ -47,6 +47,7 @@ public:
 
 int main()
 {
+    
     Developer d1;
     d1.getdata();
     d1.calculate_bonus();

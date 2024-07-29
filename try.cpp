@@ -1,16 +1,19 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int add(int,int);
+int swap(int &a,int &b)
+{
+   int temp;
+   temp=a;
+   a=b;
+   b=temp;
+}
 int main()
 {
     int a,b;
-    cout<<"ENTER A";
+    cout<<"ENTER VALUE OF A AND B:"<<endl;
     cin>>a;
-    cout<<"ENTER B";
     cin>>b;
-    cout <<"SUM IS:"<<add(a,b)<<endl;
-}
-int add(int a ,int b)
-{
-    return a+b;
+    swap(a,b);
+   cout<< a << b;
+
 }

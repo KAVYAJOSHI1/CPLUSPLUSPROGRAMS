@@ -2,7 +2,7 @@
 using namespace std;
  inline int fun(int a)
 {
-    cout<<a*a*a;
+    return a*a*a;
 }
 int main()
 {

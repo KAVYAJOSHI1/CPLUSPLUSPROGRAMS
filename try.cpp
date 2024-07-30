@@ -20,4 +20,8 @@ int main()
   a obj;
   obj.set();
   obj.display();
+  a obj1;
+  obj1.set();
+  obj1.display();
+
 }

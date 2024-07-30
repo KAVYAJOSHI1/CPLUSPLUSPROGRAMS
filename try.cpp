@@ -1,19 +1,23 @@
 #include<iostream>
 using namespace std;
-int swap(int *a,int *b)
-{
-   int temp;
-   temp=*a;
-   *a=*b;
-   *b=temp;
-}
+class a{
+   int a;
+   string b;
+   public :
+   set()
+   {
+      cout<<"ENTER VALUE OF A AND B";
+      cin>>a>>b;
+   }
+   display()
+   {
+      cout<<a<<b;
+   }
+
+};
 int main()
 {
-    int a,b;
-    cout<<"ENTER VALUE OF A AND B:"<<endl;
-    cin>>a;
-    cin>>b;
-    swap(&a,&b);
-   cout<< a << b;
-
+  a obj;
+  obj.set();
+  obj.display();
 }

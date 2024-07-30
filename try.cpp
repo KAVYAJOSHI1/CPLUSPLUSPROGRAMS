@@ -1,27 +1,33 @@
 #include<iostream>
 using namespace std;
-class a{
+class object
+{
+   public:
    int a;
-   string b;
-   public :
-   set()
+   void  get()
    {
-      cout<<"ENTER VALUE OF A AND B";
-      cin>>a>>b;
+     
+      cout<<"ENTER";
+      cin>>a;
    }
-   display()
+   void display()
    {
-      cout<<a<<b;
+      cout<<a;
    }
-
 };
 int main()
 {
-  a obj;
-  obj.set();
-  obj.display();
-  a obj1;
-  obj1.set();
-  obj1.display();
+   object obj[3];
+   for(int i=0;i<3;i++)
+   {
+      obj[i].get();
+
+   }
+   for(int i=0;i<3;i++)
+   {
+      obj[i].display();
+   }
+   
+   
 
 }

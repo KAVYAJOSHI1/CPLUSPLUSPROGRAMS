@@ -3,28 +3,27 @@ using namespace std;
 class a
 {
    public :
-   int x;
-   a(int v)
+   int x,sum,b;
+   A(int y,int z)
    {
- x=v;
- 
+      x=y;
+      b=z;
    }
-   a(a &y)
+   void operator +()
    {
-      cout<<"COPY CONSTRUCTOR"<<endl;
-      x=y.x;
-      
+sum=b+x;
    }
+  
    void show()
    {
-      cout<<x;
+      cout<<sum;
    }
 
 };
 int main()
 {
-   a A(5);
+   a A(5,11);
+   +A();
    A.show();
-   a B(A);
-   B.show();
+   
 }

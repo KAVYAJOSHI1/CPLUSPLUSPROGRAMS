@@ -8,7 +8,7 @@ class base
     {
         x=i;
         cout<<"base class constructor"<<endl;
-        cout<<x;
+        cout<<x<<endl;
     }
 };
 class Derived:public base

@@ -13,7 +13,7 @@ class Account : virtual public Person {
 public:
     int pay;
 
-    Account(string n, int a, int b) : Person(n, a), pay(b) {}
+    Account(string n, int a, int b) : Person(n, a) {pay=b;}
 };
 
 class Admin : virtual public Person {

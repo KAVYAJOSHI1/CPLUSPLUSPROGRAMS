@@ -19,6 +19,9 @@ w=b;
         l=x.l;
         w=x.w;
     }
+    ~rec(){
+        cout<<"DESTRUCTED\n";
+    }
 
     void area()
     {

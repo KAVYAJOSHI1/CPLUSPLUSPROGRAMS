@@ -1,29 +1,48 @@
 #include <iostream>
-using namespace std;
-class a
-{
-   public :
-   int x,sum,b;
-   A(int y,int z)
-   {
-      x=y;
-      b=z;
-   }
-   void operator +()
-   {
-sum=b+x;
-   }
-  
-   void show()
-   {
-      cout<<sum;
-   }
+#include <string>
 
+using namespace std;
+
+class Employee {
+public:
+    string name;
+    int id;
+    float salary;
+
+    // Constructor
+    Employee(string a, int b, float c) {
+        name = a;
+        id = b;
+        salary = c;
+    }
+
+    // Method to display employee details
+    void display() {
+        cout << "NAME IS: " << name << endl;
+        cout << "ID IS: " << id << endl;
+        cout << "SALARY IS: " << salary << endl;
+    }
 };
-int main()
-{
-   a A(5,11);
-   +A();
-   A.show();
-   
+
+int main() {
+    string name;
+    int id;
+    float salary;
+
+    Employee employees[3];
+
+    for (int i = 0; i < 3; i++) {
+        cout << "ENTER THE NAME: " << endl;
+        cin >> name;
+        cout << "ENTER THE ID: " << endl;
+        cin >> id;
+        cout << "ENTER THE SALARY: " << endl;
+        cin >> salary;
+
+        // Create an employee object and display details
+        employees[i] = Employee(name, id, salary);
+        employees[i].display();
+    }
+
+    return 0;
 }

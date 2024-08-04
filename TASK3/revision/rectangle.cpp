@@ -23,7 +23,7 @@ w=b;
         cout<<"DESTRUCTED\n";
     }
 
-    void area()
+    inline void area()
     {
          a=l*w;
     }

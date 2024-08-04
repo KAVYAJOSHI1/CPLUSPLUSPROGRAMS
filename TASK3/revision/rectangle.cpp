@@ -12,7 +12,7 @@ class rec
     rec(float a,float b)
     {
 l=a;
-w=b;
+w=b; 
     }
     rec(rec& x)
     {

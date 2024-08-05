@@ -13,7 +13,7 @@ public:
     radius = r;
 
 }
-int inline area()
+inline int  area()
 {
     return (3.14 * radius * radius);
 }

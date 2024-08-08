@@ -1,4 +1,3 @@
-//
 #include <iostream>
 using namespace std;
 
@@ -6,15 +5,16 @@ class Complex {
 private:
     float real;
     float imag;
-    
+
 public:
-    Complex() : real(0), imag(0) {}
-    Complex(float r, float i) : real(r), imag(i) {}
+    // Use in-class initialization for default values
+    Complex(float r = 0, float i = 0) : real(r), imag(i) {}
 
     // Friend function for overloading the + operator
     friend Complex operator+(const Complex& c1, const Complex& c2);
 
-    void display() {
+    // Use const correctness for display function
+    void display() const {
         cout << "Real: " << real << ", Imaginary: " << imag << endl;
     }
 };

@@ -1,14 +1,17 @@
 #include<iostream>
+#include<string>
 #include<algorithm>
 using namespace std;
-void per(string a)
+void per(string str)
 {
-    sort(a.begin(),a.end());
+    char* cstr=&str[0];
+    int len=str.length();
+    sort(cstr,cstr + len);
     do
     {
      
-    cout<<a<<endl;   
-    }while(next_permutation(a.begin(),a.end()));
+    cout<<str<<endl;   
+    }while(next_permutation(cstr,cstr + len));
    
 }
 int main()

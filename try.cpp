@@ -1,48 +1,42 @@
-#include <iostream>
-#include <string>
-
+#include<iostream>
 using namespace std;
 
-class Employee {
-public:
-    string name;
-    int id;
-    float salary;
+int main()
+{
+    int n;
+    cout << "ENTER THE VALUE OF N: ";
+    cin >> n;
 
-    // Constructor
-    Employee(string a, int b, float c) {
-        name = a;
-        id = b;
-        salary = c;
+    // Dynamically allocate memory for an array of size n
+    int* a = new int[n];
+
+    cout << "ENTER THE ARRAY ELEMENTS:" << endl;
+    for(int i = 0; i < n; i++)
+    {
+        cin >> a[i];
     }
 
-    // Method to display employee details
-    void display() {
-        cout << "NAME IS: " << name << endl;
-        cout << "ID IS: " << id << endl;
-        cout << "SALARY IS: " << salary << endl;
+    cout << "ARRAY IS:" << endl;
+    for(int i = 0; i < n; i++)
+    {
+        cout << a[i] << " ";
     }
-};
+    cout << endl;
 
-int main() {
-    string name;
-    int id;
-    float salary;
-
-    Employee employees[3];
-
-    for (int i = 0; i < 3; i++) {
-        cout << "ENTER THE NAME: " << endl;
-        cin >> name;
-        cout << "ENTER THE ID: " << endl;
-        cin >> id;
-        cout << "ENTER THE SALARY: " << endl;
-        cin >> salary;
-
-        // Create an employee object and display details
-        employees[i] = Employee(name, id, salary);
-        employees[i].display();
+    // Find the maximum element
+    int max = a[0];
+    for(int i = 1; i < n; i++)
+    {
+        if(a[i] > max)
+        {
+            max = a[i];
+        }
     }
+
+    cout << "MAXIMUM IS: " << max << endl;
+
+    // Free the allocated memory
+    delete[] a;
 
     return 0;
 }

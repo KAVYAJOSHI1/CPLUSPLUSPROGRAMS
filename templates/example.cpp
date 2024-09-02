@@ -20,8 +20,9 @@ class vector
    for(int i=0;i<size;i++)
    {
     d+=this->arr[i] * arr[i];
-    return d;
+    
    }
+   return d;
   }
 };
 int main()
@@ -31,9 +32,9 @@ v1.arr[0]=4;
 v1.arr[1]=5;
 v1.arr[2]=50;
 vector v2(3);
-v1.arr[0]=4;
-v1.arr[1]=1;
-v1.arr[2]=2;
+v2.arr[0]=4;
+v2.arr[1]=1;
+v2.arr[2]=2;
 int a=v1.dotproduct(v2);
 cout<<a<<endl;
 

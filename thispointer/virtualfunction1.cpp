@@ -4,7 +4,7 @@ class base
 {
     public:
     int a;
-    virtual void show()
+    virtual void show()//can run base functions
     {
         cout<<"base1"<<endl;
     }

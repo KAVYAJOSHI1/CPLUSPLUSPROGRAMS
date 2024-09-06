@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    ofstream file("ex1.txt",ios:app);
+    ofstream file("ex1.txt",ios::app);
     if(file.is_open())
     {
         file<<"Appended another text."<<endl;

@@ -14,7 +14,7 @@ class Dog: public Animal
     public:
     void makeSound()
     {
-        cout<<"Woof! Woof!";
+        cout<<"Woof! Woof!\n";
     }
 };
 class Cat: public Animal
@@ -22,7 +22,7 @@ class Cat: public Animal
     public :
     void makeSound()
     {
-        cout<<"Meow! Meow!";
+        cout<<"Meow! Meow!\n";
     }
 };
 int main()

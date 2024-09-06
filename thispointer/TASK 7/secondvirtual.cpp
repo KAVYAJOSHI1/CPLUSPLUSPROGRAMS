@@ -24,7 +24,7 @@ class Cat: public Animal
     {
         cout<<"Meow! Meow!";
     }
-}
+};
 int main()
 {
     Animal* animal[2];

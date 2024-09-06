@@ -1,4 +1,6 @@
 //To print the contents of the file
+//istream for input
+//ostream for output
 #include<iostream>
 #include<fstream>
 using namespace std;

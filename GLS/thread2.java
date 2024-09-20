@@ -1,3 +1,4 @@
+//Creating threads using Runnable interface
 class MyRunnable implements Runnable{
     public void run()
     {

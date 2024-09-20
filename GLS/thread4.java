@@ -15,6 +15,7 @@ public class thread4
     {
     MyThread t1=new MyThread("FIRST");
     t1.start();
-    System.out.println("ID OF THE THREAD IS "+t1.getName());
+    System.out.println("ID OF THE THREAD IS "+t1.getId());
+    System.out.println("NAME OF THE THREAD IS "+t1.getName());
     }
 }

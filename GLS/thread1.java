@@ -14,8 +14,8 @@ public class thread1
         MyThread t1 = new MyThread();
         MyThread t2 = new MyThread();
         MyThread t3 = new MyThread();
-        t1.run();
-        t2.run();
-        t3.run();
+        t1.start();
+        t2.start();
+        t3.start();
     }
 }

@@ -1,0 +1,6 @@
+Name                    Number
+a                            4
+c                            1
+g                            3
+w                            8
+x                            6

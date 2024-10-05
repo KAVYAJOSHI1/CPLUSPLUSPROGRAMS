@@ -1,6 +1,6 @@
 Name                    Number
-a                            4
-c                            1
-g                            3
-w                            8
-x                            6
+a                            5
+y                            8
+g                            7
+b                            7
+c                            3

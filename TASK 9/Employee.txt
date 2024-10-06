@@ -1,0 +1,6 @@
+EMPLOYEE CODE  EMPLOYEE NAME  DESIGNATION             SALARY
+2              s              f                            2
+5              s              e                            3
+4              r              y                            2
+7              e              r                            2
+1              z              e                            8
